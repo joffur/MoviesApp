@@ -1,0 +1,1 @@
+console.log('API URL = httos://ajsffjjkfaf.com/asdfadjfk?api_key=' + API_KEY);
