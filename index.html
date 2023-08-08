@@ -1,15 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies App</title>
-  <link rel="stylesheet" href="./styles/app.css">
-</head>
-<body>
-  <h1>Movies App</h1>
-
-  <script src="./src/secrets.js"></script>
-  <script src="./src/main.js"></script>
-</body>
+<html> 
+  <head> 
+    <title>Movies App</title>
+    <meta chartset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900">
+    <script src="https://kit.fontawesome.com/5c553cb242.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <header class="header-container" id="header"> <span class="header-arrow inactive"><i class="fa-solid fa-chevron-left"></i></span>
+      <h1 class="header-title">Movies App </h1>
+      <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+      <form class="header-searchForm" id="searchForm">
+        <input type="text" placeholder="Vengadores">
+        <button> <i class="fa-solid fa-magnifying-glass fa-beat"></i></button>
+      </form>
+    </header>
+    <section class="trendingPreview-container" id="trendingPreview">
+      <div class="trendingPreview-header">
+        <h2 class="trendingPreview-title">Tendencias</h2>
+        <button class="trendingPreview-btn">Ver más</button>
+      </div>
+      <article class="trendingPreview-movieList">
+        <div class="movie-container"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"><img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"><img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+      </article>
+    </section>
+    <section class="categoriesPreview-container" id="categoriesPreview">
+      <h2 class="categoriesPreview-title">Categorías</h2>
+      <article class="categoriesPreview-list">
+        <div class="category-container"> 
+          <h3 class="category-title" id="id28">Romance</h3>
+        </div>
+        <div class="category-container"> 
+          <h3 class="category-title" id="id16">Drama</h3>
+        </div>
+        <div class="category-container"> 
+          <h3 class="category-title" id="id14">Acción</h3>
+        </div>
+      </article>
+    </section>
+    <section class="genericList-container inactive" id="genericList">
+      <div class="movie-container"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+      <div class="movie-container"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+      <div class="movie-container"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+    </section>
+    <section class="movieDetail-container inactive" id="movieDetail">
+      <h1 class="movieDetail-title">DeadPool </h1><span class="movieDetail-score">7.6</span>
+      <p class="movieDetail-description">Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.</p>
+      <article class="categories-list"> 
+        <div class="category-container"> 
+          <h3 class="category-title" id="id28">Romance</h3>
+        </div>
+        <div class="category-container"> 
+          <h3 class="category-title" id="id16">Drama</h3>
+        </div>
+        <div class="category-container"> 
+          <h3 class="category-title" id="id14">Acción</h3>
+        </div>
+      </article>
+      <article class="relatedMovies-container"> 
+        <h2 class="relatedMovies-title">Películas similares </h2>
+        <div class="relatedMovies-scrollContainer"> 
+          <div class="movieContainer"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+          <div class="movieContainer"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+          <div class="movieContainer"> <img class="movie-img" src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" alt="Nombre de la película"></div>
+        </div>
+      </article>
+    </section>
+    <footer>Made by JoFFur 💚 2023</footer>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/main.js"> </script>
+  </body>
 </html>
