@@ -197,9 +197,8 @@ button {
 }
 
 .trendingPreview-movieList .movie-container {
-  display: flex;
+  display: inline-block;
   margin-right: 8px;
-  gap: 10px;
 }
 
 .trendingPreview-movieList .movie-container .movie-img {
